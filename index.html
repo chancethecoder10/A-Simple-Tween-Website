@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+ A simple Tween Anmated Website
+
+</title>
+<!--<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>-->
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/power.js"></script>
+<script src="js/style.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.devrama.slider.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300" rel="stylesheet"> 
+
+</head>
+
+<body class="isLoaded">
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+	</div>
+	<!-- Start Navbar-->
+	<div class="row">
+	<nav class="navbar navbar-default navbar-fixed-top" id="siteNav" role="navigation" style="border-bottom-width: 0px;">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>                        
+	  	</button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<div class="col-sm-9 col-xs-9 col-md-9 col-lg-9 nav9">
+				  	<ul class="nav navbar-nav navbar-header">
+				    	<li ><a href="#" ><img src="images/logo.png"/></a></li>
+				    </ul>
+				    <ul class="nav navbar-nav" style="padding-top: 12px; ">
+				    	<li ><a href="#mainSlide" >Home</a></li>
+				   		<li ><a href="#triggarFirstContentMarker" onclick="element1over1()">About Yourself</a></li>
+				   		<li ><a href="#triggarFirstContentMarker" onclick="element1over2()">life Management</a></li>
+				   		<li ><a href="#about" >About</a></li>
+				   		<li ><a href="#triggarFourthContent" >FAQ</a></li>
+				   		<li ><a href="#contact" >Contuct Us</a></li>
+				    </ul>
+				</div>
+				<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3 nav3">
+				    <ul class="nav navbar-nav navbar-right">
+				    	<div class="search">
+						  <input type="text" class="search-box" placeholder="search.." />
+						  <input type="submit" value="" class="search-btn" />
+						</div>
+				    </ul>
+				</div>
+			</div>
+	 
+	</nav>
+	</div>
+	<!-- End Navbar-->
+
+<!-- ########################################################################################################################################## -->
+	
+	<!-- Start Slide Show -->
+	<div id="triggarSlideShow">
+	<div class="row" id="mainSlide">
+		<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" id="mainSlideCol" style="overflow: hidden;">
+				<!--<div id="ms1"><img class="mainSlides img-responsive w3-animate-right" src="images/Slider-4-final.png"></div>
+				<div id="ms2"><img class="mainSlides img-responsive w3-animate-right" src="images/slider-dipa.jpg"></div>
+				<div id="ms3"><img class="mainSlides img-responsive w3-animate-right" src="images/slider-mou.jpg"></div>-->
+			<div class="example-animation">
+            	<div data-lazy-background="images/slide1.jpg">
+		                
+	            </div>
+	            <div data-lazy-background="images/slide2.jpg">
+	                
+	            </div>
+	            <div data-lazy-background="images/slide3.jpg">
+	                
+	            </div>
+    		</div>
+		</div>
+		
+        <script type="text/javascript">
+            
+        </script>
+	</div>
+	</div>
+	<div id="ScrollDown"><img id="scrollImg" height="60px" src="images/chini_1_orig.gif" onclick="scrollDown()" ></div>
+	<!-- END Slide Show -->
+
+
+<!-- ########################################################################################################################################## -->
+	
+	<!-- Start 1st Content -->
+
+	<div id="triggarFirstContentMarker"></div>
+	<div id="triggarFirstContent">
+		<div class="row no-gutter" id="firstContent">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-6" id="firstContent1" onmouseover="element1over1()" onmouseleave="element1leave1()">
+						<div id="firstContentHead1"><p>About Yourself</p></div>
+						<div id="firstContentText1"><p id="firstContentText1P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Nos cum te, M. Duo Reges: constructio interrete. Qui enim existimabit posse se miserum esse beatus non erit. Vitae autem degendae ratio maxime quidem illis placuit quieta.</p></div>
+					</div>
+					<div class="col-sm-6" id="firstContent2" onmouseover="element1over2()" onmouseleave="element1leave2()">
+						<div id="firstContentHead2"> <p>Life Management</p></div>
+						<div id="firstContentText2"><p id="firstContentText2P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Nos cum te, M. Duo Reges: constructio interrete. Qui enim existimabit posse se miserum esse beatus non erit. Vitae autem degendae ratio maxime quidem illis placuit quieta.</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End 1st Content -->
+<!-- ########################################################################################################################################## -->
+<!-- Start 2nd Content -->
+	
+	<!-- End 2nd Content -->
+
+<!-- ########################################################################################################################################## -->
+	
+	<!-- Start About -->
+	<div id="triggarAbout">
+	<div class="container-fluid" id="about" style="width: 100%">
+		<div class="row">
+			<div id="aboutContent" class="col-sm-12 tab-pane fade in active">
+				<div class="row no-gutter">
+					<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 about1" id="ab1" onmouseover="ab1()" style="overflow: hidden;">
+						<div class="aboutBox">
+							<div class="w3-display-middle w3-container aboutText">
+								<span class="slimomealIcon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+								<hr/><strong>Colorfull</strong><br> Hoc dixerit potius Ennius.
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 about1" id="ab2" onmouseover="ab2()" style="overflow: hidden;">
+						<div class="aboutBox">
+							<div class="w3-display-middle w3-container aboutText">
+								<span class="slimomealIcon"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+								<hr/><strong>Enjoy</strong><br> Hoc dixerit potius Ennius.
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 about1" id="ab3" onmouseover="ab3()" style="overflow: hidden;">
+						<div class="aboutBox">
+							<div class="w3-display-middle w3-container aboutText">
+								<span class="slimomealIcon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+								<hr/><strong>Life</strong><br> Hoc dixerit potius Ennius
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 about1" id="ab4" onmouseover="ab4()" style="overflow: hidden;">
+						<div class="aboutBox">
+							<div class="w3-display-middle w3-container aboutText">
+								<span class="slimomealIcon"><i class="fa fa-beer" aria-hidden="true"></i></span>
+								<hr/><strong>Nature</strong><br>Hoc dixerit potius Ennius
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	</div>
+	<!-- END  About -->
+<!-- ########################################################################################################################################## -->
+<!-- Start 3rd Content -->
+	
+	
+	<div id="triggarThirdContent">
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+		<div class="row" id="thirdContent">
+			<div class="col-sm-4">
+				<img class="img-responsive fc3 grayImage" src="images/about1.jpg">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive fc3 grayImage" src="images/about2.jpg">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive fc3 grayImage" src="images/about3.jpg">
+			</div>
+		</div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	</div>
+	<!-- End 3rd Content -->
+<!-- ########################################################################################################################################## -->
+<!-- Start 4th Content -->
+	<div id="triggarFourthContent">
+		<div class="row no-gutter" id="fourthContent">
+			<div class="col-sm-6 fourthBody" onmouseover="element4over1()" onmouseleave="element4leave1()">
+				<div id="fs4Top1">
+					<h2 class="fourthBodyh2"><span class="slimomealIcon"><i class="fa fa-clock-o" aria-hidden="true"></i></span><br/><br/>Lorem ipsum dolor</h2>
+				</div>
+				<div id="fs4Bottom1">
+					<h2 class="fs4heading">Lorem ipsum dolor</h2>
+					<p class="benifitsP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.</p>
+				</div>
+			</div>
+			<div class="col-sm-6 fourthBody" onmouseover="element4over2()" onmouseleave="element4leave2()">
+				<div id="fs4Top2">
+					<h2 class="fourthBodyh2"><span class="slimomealIcon"><i class="fa fa-female" aria-hidden="true"></i></span><br/><br/> Lorem ipsum dolor</h2>
+				</div>
+				<div id="fs4Bottom2">
+					<h2 class="fs4heading">Lorem ipsum dolor</h2>
+					<p class="benifitsP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End 4th Content -->
+<!-- ########################################################################################################################################## -->
+<!-- Start 4th Content -->
+	<div id="triggarFifthContent">
+		<div class="row no-gutter" id="fifthContent">
+			<div class="col-sm-6 fifthBody" onmouseover="element5over1()" onmouseleave="element5leave1()">
+				<div id="fs5Top1">
+					<h2 class="fifthBodyh2"><span class="slimomealIcon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span><br/><br/>Lorem ipsum dolor</h2>
+				</div>
+				<div id="fs5Bottom1">
+					<h2 class="fs5heading">Lorem ipsum dolor</h2>
+					<p class="benifitsP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.</p>
+				</div>
+			</div>
+			<div class="col-sm-6 fifthBody" onmouseover="element5over2()" onmouseleave="element5leave2()">
+				<div id="fs5Top2">
+					<h2 class="fifthBodyh2"><span class="slimomealIcon"><i class="fa fa-ban" aria-hidden="true"></i></span><br/>Lorem ipsum dolor</h2>
+				</div>
+				<div id="fs5Bottom2">
+					<h2 class="fs5heading">Lorem ipsum dolor</h2>
+					<p class="benifitsP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End 4th Content -->
+<!-- ########################################################################################################################################## -->
+<!-- Start Contact Content -->
+	<section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container">
+              <h2 class="fcContact">Contact Us</h2>
+              <p class="fcContact">Feel free to shout us by feeling the contact form or visiting our social network sites like Twitter,Fackebook,Pinterest</p>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <form class="form-horizontal contactForm">
+                    <div class="form-group fcContact">
+                      <label for="exampleInputName2">Name</label>
+                      <input id="exampleInputName2" type="text" class="form-control" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group fcContact">
+                      <label for="exampleInputEmail2">Email</label>
+                      <input id="exampleInputEmail2" type="email" class="form-control" placeholder="Enter Your E-Mail">
+                    </div>
+                    <div class="form-group fcContact">
+                      <label for="exampleInputName3">Phone Number</label>
+                     <input id="exampleInputName3" type="text" class="form-control" placeholder="Enter Your Phone Number(Not more then 11 digits)"> 
+                    </div>
+                    <div class="form-group fcContact">
+                      <button type="submit" class="btn btn-default">Register</button> 
+                    </div> 
+                  </form>
+                  <hr class="fcContact">
+                    <h3 class="fcContact">Join The Commiunity</h3>
+                  <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/MosharrafOshy?lang=en" class="btn btn-default btn-lg fcContact" target="_blank"><i class="fa fa-twitter-square"> <span class="network-name">Twitter</span></i></a></li>
+                    <li><a href="https://www.facebook.com/mosharraf.oshy009" class="btn btn-default btn-lg fcContact" target="_blank"><i class="fa fa-facebook-official"> <span class="network-name">Facebook</span></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/abdullah-mosharraf-790398101/" class="btn btn-default btn-lg fcContact" target="_blank"><i class="fa fa-linkedin"></i> <span class="network-name">LinkedIn</span></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+	<!-- End Contact Content -->
+	<div id="bottom">
+        <p class="bottomP">© 2017 | <a href="#">Abdullah-Al-Mosharraf</a> | Bangladesh | All Rights Reserved</p>
+    </div>
+    <div class="col-md-12">
+		<div id="sectionbmi" class="bmi hidden-xs hidden-sm" onclick="refresh()" style="display: block;"><a  data-toggle="modal" data-target=".bd-example-modal-lg">CALCULATE BMI</a></div>
+		
+	</div>
+    <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content bmiContent">
+	    	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title">Check Your BMI</h2>
+		    </div>
+		    <div class="modal-body">
+		        <div class="row">
+		        		<div class="col-md-8 col-md-offset-2">
+			                <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                                <h2 class="panel-title"><i class="fa fa-pencil"></i> Height </h2>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-lg-12">
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">Feet</span>
+                                            <input type="text" class="form-control" name="feet" id="feet" placeholder="feet">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">Inch</span>
+                                            <input type="text" class="form-control" name="inch" id="inch" placeholder="inch">
+                                        </div>                   
+                                    </div>
+                                </div>
+			                </div>
+						</div>
+						<div class="col-md-8 col-md-offset-2">
+			                <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                                <h2 class="panel-title"><i class="fa fa-pencil"></i> Weight </h2>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-lg-12">
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">Weight</span>
+                                            <input type="text" class="form-control" name="weight" id="weight" placeholder="Kilogram">
+                                        </div>
+                                    </div>
+                                </div>
+			                </div>
+						</div>
+			            <div class="col-md-8 col-md-offset-2">
+			                <form role="form" action="#">
+			                    <div class="form-group">
+			                    <br/>
+			                        <div class="col-md-12" style="text-align: center;">
+			                            <button type="button" id="submitValue" class="btn btn-primary submitBMI"><i class="fa fa-calculator"  aria-hidden="true"></i> Check Your BMI</button>
+			                        </div>
+			                    </div>
+			                    <br/>
+         						<br/>
+			                    <div class="form-group">
+			                    	<div id="result" style="display: none;">
+							            <p id="manage" align="center">Manage weight and enjoy life!!!</p>
+							            <p id="ideal_weight" align="center">Ideal Weight </p>
+							            <p id="digit" align="center">75.0 kg</p>
+							            <p id="ideal_weight" align="center">Ideal Weight range</p>
+							            <p id="digitRange" align="center">65 - 88 kg</p>
+							        </div>
+			                    </div>
+			                </form>
+			            </div>
+		       	 	</div>
+		     </div> 
+       	 	<div class="modal-footer">
+		        <button type="button" id="submitRefresh" class="btn btn-primary"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+		        <button type="button" id="submitClose" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i> Close</button>
+		    </div>
+	    </div>
+	  </div>
+	</div>	
+</body>
+<script type="text/javascript">
+	
+	$("#submitValue").click(function(){
+
+
+            var weight=$("#weight").val();
+
+            var heightFeet=$("#feet").val();
+
+            var heightInch=$("#inch").val();
+            if($.isNumeric(weight) && $.isNumeric(heightFeet) && $.isNumeric(heightInch)){
+                var totalInch = Number(heightFeet)*12+Number(heightInch);
+                var totalMeter = 0.0254*Number(totalInch )*0.0254*Number(totalInch );
+                var idealWeight = Number(totalMeter)*21.7;
+                totalInch=Number(totalInch)*Number(totalInch);
+                idealWeight = idealWeight.toFixed(1);
+                var lowerWeight = 18.5*Number(totalMeter);
+                lowerWeight = lowerWeight.toFixed(1);
+                var higherWeight = 24.9*Number(totalMeter);
+                higherWeight = higherWeight.toFixed(1);
+                higherWeight = lowerWeight+" - "+higherWeight+" Kg";
+                var totalPounds=2.20462262*weight*703;
+                var bmi=totalPounds/totalInch;
+                bmi=bmi.toFixed(2);
+                var report="";
+
+                if(bmi<18){
+                    report = "Need to Gain weight"
+                }
+                else if(bmi>=18 && bmi<25){
+                    report="Stay fit !!!";
+                }
+                else if(bmi>=25){
+                    report="Manage weight and enjoy life!!!";
+                }
+                idealWeight = idealWeight +" Kg";
+                $("#manage").html(report);
+                $("#digit").text(idealWeight );
+                $("#submitValue").html("BMI "+bmi+" Kg/m<sup>2</sup>");
+                $("#digitRange").text(higherWeight);
+
+                $("#result").show();
+            }
+            else
+            {
+            	alert('Please enter all requirement for calculating BMI');
+            }
+        });
+        $("#submitRefresh").click(function(){
+			//e.preventDefault();
+            $("#result").hide();
+            $('#feet').val('');
+            $('#inch').val('');
+            $('#weight').val('');
+            $("#submitValue").html('<i class="fa fa-calculator" aria-hidden="true"> </i> Check Your BMI');
+        });
+function refresh()
+{
+	$("#result").hide();
+    $('#feet').val('');
+    $('#inch').val('');
+    $('#weight').val('');
+    $("#submitValue").html('<i class="fa fa-calculator" aria-hidden="true"> </i> Check Your BMI');
+}
+</script>
+</html>
